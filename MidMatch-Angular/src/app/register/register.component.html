@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<flash-messages></flash-messages>
+<main class="py-4">
+    <div class="containter autosize">
+        <div class="card">
+            <div class="card-header">
+                Register
+            </div>
+            <div class="card-body">
+                <form (submit)="onRegisterSubmit()" >
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder=" Enter Email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailconf">Confirm Email</label>
+                        <input type="email" [(ngModel)]="emailconf" name="emailconf" class="form-control" id="emailconf" aria-describedby="emailconfHelp" placeholder=" Confirm">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" [(ngModel)]="password" name="password" class="form-control" id="password" placeholder=" Enter Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordconf">Confirm Password</label>
+                        <input type="password" [(ngModel)]="passwordconf" name="passwordconf" class="form-control" id="passwordconf" placeholder=" Confirm">
+                      </div>
+                    <input type="submit" [disabled]="!email || !emailconf || !password || !passwordconf" class="btn btn-primary" value="Submit">
+                  </form>
+            </div>
+        </div>
+    </div>
+</main>

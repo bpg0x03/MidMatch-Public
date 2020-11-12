@@ -1,0 +1,20 @@
+<div class="flex-center position-ref full-height">
+    <div class="thecontent">
+
+        <div class="title m-b-md">
+            MidMatch
+        </div>
+        <div class='end'>
+            v2: Accounts Reset!<br>
+            Ending: August 28, 2020
+        </div>
+        <div class="links">
+            <a [routerLink]="['/about']">How It Works</a>
+            <a *ngIf="!authService.loggedIn()" [routerLink]="['/login']">Login</a>
+            <a *ngIf="!authService.loggedIn()" [routerLink]="['/register']">Register</a>
+            <a *ngIf="authService.loggedIn()" [routerLink]="['/user']">Match</a><br><br>
+            <a [routerLink]="['/legal']">Regulatory</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,16 @@
+.autosize {
+    margin: auto;
+    max-width: 500px;
+    max-height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px
+}
+
+form {
+    font-size: xx-large;
+}
+
+input[type="text"] {
+    font-size: xx-large;
+}

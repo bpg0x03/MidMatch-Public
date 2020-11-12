@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<flash-messages></flash-messages>
+<div class="container autosize">
+    <form (submit)="onCrushSubmit()">
+        <div class="form-group">
+            <label for="destination">Send a crush!</label>
+            <input type="text" [(ngModel)]="destination" name="destination" class="form-control" id="destination" placeholder="XXXXXX">
+        </div>
+
+        <input type="submit" [disabled]="!destination" class="btn btn-danger btn-large" value="Submit">
+    </form>
+</div>

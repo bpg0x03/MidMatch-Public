@@ -1,0 +1,7 @@
+.autosize {
+    margin: auto;
+    max-width: 500px;
+    max-height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
